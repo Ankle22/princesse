@@ -1,0 +1,45 @@
+:root {
+  --cream: #faf6ed;
+  --cream-deep: #f1e7d3;
+  --gold: #c9a463;
+  --gold-deep: #9c7a3c;
+  --gold-pale: #e4d2a4;
+  --ink: #2e2a22;
+  --ink-soft: #6b6354;
+  --line: #e2d3ae;
+  --shadow: 0 18px 40px -20px rgba(46, 38, 18, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+.script {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

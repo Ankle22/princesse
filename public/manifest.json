@@ -1,0 +1,8 @@
+{
+  "short_name": "Princesse",
+  "name": "Pour Princesse — Livre d'or",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FAF6ED",
+  "background_color": "#FAF6ED"
+}
