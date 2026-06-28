@@ -1,8 +1,17 @@
 {
   "short_name": "Princesse",
-  "name": "Pour Princesse — Livre d'or",
+  "name": "Pour Princesse — Joyeux Anniversaire",
+  "description": "Un cadeau d'anniversaire numérique spécial pour Princesse",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#FAF6ED",
-  "background_color": "#FAF6ED"
+  "background_color": "#FAF6ED",
+  "icons": [
+    {
+      "src": "princesse5.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
 }

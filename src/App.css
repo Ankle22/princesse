@@ -623,4 +623,104 @@ footer .small {
   .letter-card {
     padding: 2.2rem 1.5rem;
   }
+
+  .letter-card::before,
+  .letter-card::after {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .letter-card::after {
+    top: auto;
+    left: auto;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .envelopes {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.2rem;
+  }
+
+  /* Modale responsive */
+  .modal-overlay {
+    padding: 1rem;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .modal-content::before,
+  .modal-content::after {
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    left: 8px;
+  }
+
+  .modal-content::after {
+    top: auto;
+    left: auto;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .modal-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .modal-prev {
+    left: 5px;
+  }
+
+  .modal-next {
+    right: 5px;
+  }
+
+  .modal-close {
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    top: -40px;
+  }
+
+  .modal-counter {
+    font-size: 1rem;
+    bottom: -30px;
+  }
+
+  /* Typographie responsive */
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  .letter h2,
+  .gallery h2,
+  .guestbook h2 {
+    font-size: 1.6rem;
+  }
+
+  .voeux-list-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .envelopes {
+    grid-template-columns: 1fr;
+  }
 }
