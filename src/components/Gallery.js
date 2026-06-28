@@ -1,27 +1,27 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 function Gallery({ content }) {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const selectedPhoto = selectedIndex !== null ? content.photos[selectedIndex] : null;
 
-  const goToPrevious = () => {
+  const goToPrevious = useCallback(() => {
     if (selectedIndex === null) return;
     if (selectedIndex === 0) {
       setSelectedIndex(content.photos.length - 1);
     } else {
       setSelectedIndex(selectedIndex - 1);
     }
-  };
+  }, [selectedIndex, content.photos.length]);
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     if (selectedIndex === null) return;
     if (selectedIndex === content.photos.length - 1) {
       setSelectedIndex(0);
     } else {
       setSelectedIndex(selectedIndex + 1);
     }
-  };
+  }, [selectedIndex, content.photos.length]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -37,12 +37,14 @@ function Gallery({ content }) {
         case 'Escape':
           setSelectedIndex(null);
           break;
+        default:
+          break;
       }
     };
 
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [selectedIndex, content.photos.length]);
+  }, [selectedIndex, goToPrevious, goToNext]);
 
   return (
     <>
