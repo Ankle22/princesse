@@ -16,10 +16,18 @@ import photo9 from "./assets/WhatsApp Image 2026-06-28 at 22.27.17.jpeg";
 import photo10 from "./assets/WhatsApp Image 2026-06-28 at 22.27.18 (1).jpeg";
 import photo11 from "./assets/WhatsApp Image 2026-06-28 at 22.27.18.jpeg";
 import photo12 from "./assets/WhatsApp Image 2026-06-28 at 22.52.49.jpeg";
-import photo13 from "./assets/princesse5.jpeg";
-import photo14 from "./assets/princesse6.jpeg";
+import photo13 from "./assets/WhatsApp Image 2026-06-28 at 23.39.22.jpeg";
+import photo14 from "./assets/WhatsApp Image 2026-06-28 at 23.39.22 (1).jpeg";
+import photo15 from "./assets/WhatsApp Image 2026-06-28 at 23.39.59.jpeg";
+import photo16 from "./assets/princesse.jpeg";
+import photo17 from "./assets/princesse1.jpeg";
+import photo18 from "./assets/princesse2.jpeg";
+import photo19 from "./assets/princesse3.jpeg";
+import photo20 from "./assets/princesse4.jpeg";
+import photo21 from "./assets/princesse5.jpeg";
+import photo22 from "./assets/princesse6.jpeg";
 
-export const TOTAL_PHOTOS = 14;
+export const TOTAL_PHOTOS = 22;
 export const TOTAL_FRIENDS = 6;
 
 export const heroContent = {
@@ -42,7 +50,7 @@ export const letterContent = {
 export const galleryContent = {
   heading: "Nos souvenirs",
   lead: "Revois ces moments qui nous rappellent à quel point tu es spéciale.",
-  photos: [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14],
+  photos: [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21, photo22],
 };
 
 export const guestbookContent = {
